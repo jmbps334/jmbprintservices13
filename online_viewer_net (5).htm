@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>JMB Printing Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav a {
+      margin: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      background: rgba(255, 255, 255, 0.8);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: center;
+    }
+    .cart {
+      background: #fff;
+      padding: 10px;
+    }
+    footer {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+    }
+    input[type='number'] {
+      width: 50px;
+    }
+    button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    img {
+      max-width: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo" width="100">
+    <h1>JMB Printing Services</h1>
+    <p>High Quality Prints</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#profile">Admin Profile</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#activities">Latest Activities</a>
+      <a href="#download">Download</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Pricing Table</h2>
+    <table id="pricing">
+      <tr>
+        <th>Item</th><th>Price</th><th>Picture</th><th>Qty</th><th>Add</th>
+      </tr>
+    </table>
+    <div class="cart">
+      <h3>View Cart</h3>
+      <ul id="cart"></ul>
+      <p>Total: ₱<span id="total">0</span></p>
+      <p>Note: Please review your order before checkout.</p>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+    <h3>Payment</h3>
+    <p>GCASH: Jorenz M. Balbuena | 09931109148</p>
+    <p>BPI: Jorenz M. Balbuena | 090931796</p>
+  </section>
+
+  <section>
+    <h2>Video</h2>
+    <video controls width="100%" src="lv_0_20250607190238.mp4"></video>
+    <h3>Lyrics</h3>
+    <p>JMB Printing Services (Tagalog Jingle)
+
+(Verse 1)
+Sa bawat okasyon, kami’y handa,
+Mga print mo, siguradong maganda.
+Tarpaulin, sticker, ID, calling card,
+Lahat ng order, quality ang standard!
+
+(Chorus)
+JMB Printing, sa'yo'y aalalay,
+Serbisyong maaasahan, abot-kaya'y tunay!
+Lahat ng kailangan mo, dito'y makikita,
+JMB Printing, ang galing ay wala nang kapantay!
+
+(Verse 2)
+Kung kailangan mo ng rush, wag kang mag-alala,
+Express service, para sa’yo, agad-agad gawa!
+Design pa lang, panalo na sa ganda,
+Sa JMB Printing, laging may diskarte't sigla.
+
+(Bridge)
+Gamit ay de-kalidad, staff ay maaasahan,
+Para sa negosyo mo, ito’y kasangga’t kaibigan.
+
+(Chorus Repeat)
+JMB Printing, sa'yo'y aalalay,
+Serbisyong maaasahan, abot-kaya'y tunay!
+Lahat ng kailangan mo, dito'y makikita,
+JMB Printing, ang galing ay wala nang kapantay!
+
+(Outro)
+JMB Printing Services —
+Laging nandyan, laging maaasahan!</p>
+  </section>
+
+  <section>
+    <h2>Calendar</h2>
+    <iframe src="https://calendar.google.com/calendar/embed?src=en.philippines%23holiday%40group.v.calendar.google.com" width="100%" height="400"></iframe>
+  </section>
+
+  <section>
+    <h2>Philippine Standard Time</h2>
+    <h3 id="clock">00:00:00 PM</h3>
+  </section>
+
+  <section id="profile">
+    <h2>Admin Profile</h2>
+    <img src="image-removebg-preview (1).png" alt="Admin Picture" width="150">
+    <h3>Jorenz M. Balbuena</h3>
+    <img src="signature.png" alt="Signature" width="200">
+    <p>History: Jorenz M. Balbuena founded JMB Printing Services to provide high quality prints to the local community of Calatagan, Batangas. The company partners with local government and financial institutions for community support.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <h3>DTI Certificate</h3>
+    <img src="dti_certificate.png" alt="DTI Certificate" width="300">
+    <h3>Partners</h3>
+    <img src="Bank_of_the_Philippine_Islands_logo.svg.png" alt="BPI" width="100">
+    <img src="481286030_1152943976870391_5102155035795616500_n.jpg" alt="GCASH" width="100">
+    <img src="19.png" alt="DTI" width="100">
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Location: Hi-way, Balitoc, Calatagan, Batangas</p>
+    <p>Email: jmbprintingservices12@gmail.com</p>
+    <p>Facebook Page: JMB Printing Services</p>
+  </section>
+
+  <section id="activities">
+    <h2>Latest Activities & Announcements</h2>
+    <p>[Add your latest activities here]</p>
+  </section>
+
+  <section id="download">
+    <h2>Download</h2>
+    <p>[Add files for download here]</p>
+  </section>
+
+  <section>
+    <h2>Loyalty Card ID Registration</h2>
+    <form onsubmit="return register()">
+      <input placeholder="SURNAME" required><br>
+      <input placeholder="GIVEN NAME" required><br>
+      <input placeholder="MIDDLE NAME" required><br>
+      <input placeholder="ADDRESS" required><br>
+      <input placeholder="CONTACT NUMBER" required><br>
+      <input placeholder="EMAIL ADDRESS" required><br>
+      <button type="submit">Submit</button>
+    </form>
+    <p>Note: Your Loyalty Card ID will be delivered in 3-4 months.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 JMB Printing Services All rights reserved
+  </footer>
+
+  <script>
+    const items = [
+      ["ID RUSH 1",40,"pic1.png"],["ID RUSH 2",50,"pic2.png"],["ID RUSH 3",55,"pic3.png"],["ID RUSH 4",55,"pic4.png"],
+      ["ID RUSH 5",65,"pic5.png"],["ID RUSH 6",65,"pic6.png"],["ID RUSH 7",65,"pic7.png"],["ID RUSH 8",65,"pic8.png"],
+      ["PHOTO PRINT 1",70,"pic9.png"],["PHOTO PRINT 2",70,"pic10.png"],["PHOTO PRINT 3",75,"pic11.png"],["PHOTO PRINT 4",85,"pic12.png"],
+      ["PHOTO PRINT 5",85,"pic13.png"],["PHOTO PRINT 6",85,"pic14.png"],["PHOTO PRINT 7",90,"pic15.png"],["PHOTO PRINT 8",60,"pic16.png"],
+      ["PHOTO PRINT 9",90,"pic17.png"],["A4(COLORED)",5,"pic18.png"],["A4(B&W)",5,"pic19.png"],["SHORT(COLORED)",5,"pic20.png"],
+      ["SHORT(B&W)",5,"pic21.png"],["LONG(COLORED)",5,"pic22.png"],["LONG(B&W)",5,"pic23.png"],["LAMINATE",35,"pic24.png"],["BOOKBINDING",100,"pic25.png"]
+    ];
+    const pricingTable = document.getElementById('pricing');
+    const cartList = document.getElementById('cart');
+    const totalSpan = document.getElementById('total');
+    let cart = [];
+    let total = 0;
+
+    items.forEach((item,i)=>{
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${item[0]}</td><td>${item[1]}</td><td><img src="${item[2]}" width="50"></td>
+        <td><input id="qty${i}" type="number" min="1" value="1"></td>
+        <td><button onclick="addToCart(${i})">Add</button></td>`;
+      pricingTable.appendChild(row);
+    });
+
+    function addToCart(i) {
+      const qty = parseInt(document.getElementById(`qty${i}`).value);
+      cart.push({name: items[i][0], price: items[i][1], qty: qty});
+      total += items[i][1]*qty;
+      updateCart();
+    }
+
+    function updateCart() {
+      cartList.innerHTML = '';
+      cart.forEach(it=>{
+        const li = document.createElement('li');
+        li.textContent = `${it.name} x${it.qty} = ₱${it.price*it.qty}`;
+        cartList.appendChild(li);
+      });
+      totalSpan.textContent = total;
+    }
+
+    function checkout() {
+      window.location.href = `mailto:jmbprintingservices12@gmail.com?subject=Order&body=Order Total: ₱${total}`;
+    }
+
+    function register() {
+      alert("Form submitted. Note: Your Loyalty Card ID will be delivered in 3-4 months.");
+      return false;
+    }
+
+    function updateClock() {
+      const now = new Date();
+      let hr = now.getHours();
+      let min = now.getMinutes();
+      let sec = now.getSeconds();
+      const ampm = hr >= 12 ? "PM" : "AM";
+      hr = hr % 12 || 12;
+      document.getElementById("clock").textContent =
+        `${hr.toString().padStart(2,0)}:${min.toString().padStart(2,0)}:${sec.toString().padStart(2,0)} ${ampm}`;
+    }
+    setInterval(updateClock, 1000);
+  </script>
+
+</body>
+</html>
